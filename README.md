@@ -1,6 +1,6 @@
 # [ChatMedea](https://chatmedea.glitch.me/)
 
-ChatMedea is a project that utilizes a fine-tuned Diablo GPT model based on a parsed dataset of Euripides' Medea. The project integrates the Hugging Face API and Transformers tools to enable interactive conversations with the Chat Medea chatbot.
+ChatMedea is a project that utilizes a fine-tuned Diablo GPT model based on a parsed dataset of Euripides' Medea. The project integrates the Hugging Face API and Transformers tools to enable interactive conversations with the Chat Medea chatbot. This project was made during the [Out in Tech Mentorship Program](https://outintech.com/mentorship-program/).
 
 ## Description
 
