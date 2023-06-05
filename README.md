@@ -6,7 +6,7 @@ ChatMedea is a project that utilizes a fine-tuned Diablo GPT model based on a pa
 
 The ChatMedea  interface is built using JavaScript and incorporates HTML and CSS for the creation of an interactive frontend. The core functionality of Chat Medea is powered by the fine-tuned Diablo GPT model, which enables engaging and context-aware conversations based on the content from Euripides' Medea.
 
-The model used in this project has been fine-tuned by myself using a parsed dataset of Euripides' Medea, from [Ian Johnston](https://www.google.com/search?q=medea+full+text&oq=medea+full+text&sourceid=chrome&ie=UTF-8). The data was processed to train the model and enable it to generate responses in a conversational manner.
+The model used in this project has been fine-tuned by myself using a parsed dataset of Euripides' Medea, from [Ian Johnston](https://www.google.com/search?q=medea+full+text&oq=medea+full+text&sourceid=chrome&ie=UTF-8). The data was processed to train the model and enable it to generate responses in a conversational manner. A link to the model repository on HuggingFace can be found [here](https://huggingface.co/ajpieroni/DiabloGPT-medium-medea?text=Hi.)
 
 ## Features
 
