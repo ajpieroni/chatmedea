@@ -2,6 +2,7 @@ document.getElementById("inp_text").focus();
 document
   .getElementsByTagName("body")[0]
   .addEventListener("keypress", function (e) {
+ 
     if (e.key === "Enter") {
       send();
     }
