@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{seo.title}}</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="{{seo.url}}" />
+    <meta name="description" content="{{seo.description}}" />
+    <meta property="og:title" content="{{seo.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{seo.url}}" />
+    <meta property="og:description" content="{{seo.description}}" />
+    <meta property="og:image" content="{{seo.image}}" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+  </head>
+
+  <body>
+    <!--Header: Medea's Vengance -->
+    <div class="header-section">
+      <!--<div class="header-image"></div>-->
+      <div class="fade-in-image"></div>
+      <h1 class="header">Medea's Vengance: Immersive Chat Experience</h1>
+      <!--<img
+        src="https://cdn.glitch.global/8faffde8-beb6-4cce-9500-307d9d253fde/medea.png?v=1684358651944"
+      />-->
+    </div>
+
+    <div class="wrapper">
+      <!-- Site Intro-->
+      <div class="site-introduction">
+        <p>
+          Welcome to the ChatMedea Interface, an immersive experience where you
+          can engage with Medea, the vengeful protagonist of the classic tale.
+          Prepare to be captivated as you interact with this fine-tuned
+          Diablo-GPT model. Step into Medea's world and explore her voice and
+          emotions firsthand.
+        </p>
+        <div class="button-footer">
+        <button class="button" id="instruction-button">
+          How to Use
+        </button>
+
+      </div>
+
+        <div hidden class="instructions">
+          <p>
+            To initiate a conversation with Medea, simply enter your questions
+            or statements in the input field below and click "Send." Medea will
+            respond authentically, staying true to her character, offering
+            unique insights into her motivations and actions. Engage with her as
+            if you were conversing with Medea herself, delving deep into the
+            psyche of this intriguing figure.
+          </p>
+        </div>
+        <div hidden class="overtime">
+          <p>
+            Apologies for the delay. The model may take a few seconds to load.
+            Please wait patiently.
+          </p>
+        </div>
+      </div>
+      <div class="chat-header">
+        Medea
+      </div>
+
+      <div class="content" role="main">
+        <div class="col-md-4 col-sm-8 offset-1 bg-white p-3" id="outer">
+          <div class="chat-container">
+            <div class = "hidden" id = "load">
+              <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+           
+
+          </div>
+          <!-- Input Form -->
+          <div class="input-group">
+            
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Medea, why are you so angry? Wretched woman!"
+              id="inp_text"
+              style="height: 50px"
+            />
+            
+            <div class="input-group-append">
+              <button class="button" id="send">Send</button>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!---avascript-->
+    <script src="/script.js"></script>
+    <script>
+      document.getElementById("instruction-button").addEventListener("click",
+      function () { const divToToggle = document.querySelector(".instructions");
+      divToToggle.hidden = !divToToggle.hidden; });
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "ChatMedeaInterface",
+  "version": "0.1.0",
+  "description": "Welcome to the ChatMedea Interface, where you can interact with Medea, the scorned wife seeking revenge on Jason. Enter your questions or statements below and experience Medea's voice and emotions firsthand.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/static": "^6.10.1",
+    "@fastify/view": "^7.4.1",
+    "fastify": "^4.17.0",
+    "handlebars": "^4.7.7",
+    "node-fetch": "^3.3.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/ChatMedeaInterface"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch"
+  ]
+}

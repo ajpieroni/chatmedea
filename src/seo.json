@@ -1,0 +1,7 @@
+{
+  "glitch-help-instructions": "For a custom domain, change the 'url' parameter from 'glitch-default' to your domain _without_ a traling slash, like 'https://www.example.com'",
+  "title": "ChatMedea",
+  "description": "Welcome to the ChatMedea Interface, where you can interact with Medea, the scorned wife seeking revenge on Jason. Enter your questions or statements below and experience Medea's voice and emotions firsthand.",
+  "url": "glitch-default",
+  "image": "https://cdn.glitch.global/8faffde8-beb6-4cce-9500-307d9d253fde/medea.png?v=1684358651944"
+}
