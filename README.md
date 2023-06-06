@@ -1,44 +1,20 @@
-# Hello Node!
+# [ChatMedea](https://chatmedea.glitch.me/)
 
-This project includes a Node.js server script and a web page that connects to it. The front-end page presents a form the visitor can use to submit a color name, sending the submitted value to the back-end API running on the server. The server returns info to the page that allows it to update the display with the chosen color. 🎨
+ChatMedea is a project that utilizes a fine-tuned Diablo GPT model based on a parsed dataset of Euripides' Medea. The project integrates the Hugging Face API and Transformers tools to enable interactive conversations with the Chat Medea chatbot. This project was made during the [Out in Tech Mentorship Program](https://outintech.com/mentorship-program/).
 
-[Node.js](https://nodejs.org/en/about/) is a popular runtime that lets you run server-side JavaScript. This project uses the [Fastify](https://www.fastify.io/) framework and explores basic templating with [Handlebars](https://handlebarsjs.com/).
+## Description
 
-_Last updated: 03 May 2023_
+The ChatMedea  interface is built using JavaScript and incorporates HTML and CSS for the creation of an interactive frontend. The core functionality of Chat Medea is powered by the fine-tuned Diablo GPT model, which enables engaging and context-aware conversations based on the content from Euripides' Medea.
 
-## Prerequisites
+The model used in this project has been fine-tuned by myself using a parsed dataset of Euripides' Medea, from [Ian Johnston](https://www.google.com/search?q=medea+full+text&oq=medea+full+text&sourceid=chrome&ie=UTF-8). The data was processed to train the model and enable it to generate responses in a conversational manner. A link to the model repository on HuggingFace can be found [here](https://huggingface.co/ajpieroni/DiabloGPT-medium-medea?text=Hi.).
 
-You'll get best use out of this project if you're familiar with basic JavaScript. If you've written JavaScript for client-side web pages this is a little different because it uses server-side JS, but the syntax is the same!
+## Features
 
-## What's in this project?
+- Interactive and context-aware chatbot based on the Diablo GPT model
+- Fine-tuned model based on a parsed dataset of Euripides' Medea
+- Utilizes the Hugging Face API and Transformers tools
+- User-friendly frontend built with JavaScript, HTML, and CSS
 
-← `README.md`: That’s this file, where you can tell people what your cool website does and how you built it.
+## Usage
 
-← `public/style.css`: The styling rules for the pages in your site.
-
-← `server.js`: The **Node.js** server script for your new site. The JavaScript defines the endpoints in the site back-end, one to return the homepage and one to update with the submitted color. Each one sends data to a Handlebars template which builds these parameter values into the web page the visitor sees.
-
-← `package.json`: The NPM packages for your project's dependencies.
-
-← `src/`: This folder holds the site template along with some basic data files.
-
-← `src/pages/index.hbs`: This is the main page template for your site. The template receives parameters from the server script, which it includes in the page HTML. The page sends the user submitted color value in the body of a request, or as a query parameter to choose a random color.
-
-← `src/colors.json`: A collection of CSS color names. We use this in the server script to pick a random color, and to match searches against color names.
-
-← `src/seo.json`: When you're ready to share your new site or add a custom domain, change SEO/meta settings in here.
-
-## Try this next 🏗️
-
-Take a look in `TODO.md` for next steps you can try out in your new site!
-
-___Want a minimal version of this project to build your own Node.js app? Check out [Blank Node](https://glitch.com/edit/#!/remix/glitch-blank-node)!___
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+To interact with Chat Medea, you can visit the live demo at [chatmedea.glitch.me](https://chatmedea.glitch.me/).
