@@ -34,14 +34,11 @@
   display: flex;
   margin: 0;
   flex-direction: column;
-
-
 }
 .header {
   color: white;
   font-size: 3em;
   font-weight: bold;
-
   flex: 1;
   max-width: 100%;
   font-family: var(--font-family-header);
@@ -50,22 +47,34 @@
   
 }
 
+.subheader {
+  color: white;
+  font-size: 2em;
+  font-weight: italic;
+  animation: fadeIn 5s;
+  text-align: center;
+  padding: 16px;
+  font-family: var(--font-family-header);
+  
+}
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 body {
+
   font-family: var(--font-family);
   background-color: #cf6c16;
   display: flex;
   height: 100vh;
-  margin: 1.5em;
+  margin: 50px;
   flex-direction: column;
   
 }
 .site-introduction{
   animation: fadeIn 5s;
+  font-size: 12px;
 }
 
 .wrapper {
@@ -264,12 +273,14 @@ main::-webkit-scrollbar-thumb {
 }
 #load{
   flex: 1;
+  position: relative;
+  bottom: 0;
 }
 
 
 .lds-ellipsis {
   width: 80px;
-  height: 80px;
+  height: 50px;
   position: absolute;
   bottom: 0;
 }
@@ -378,9 +389,10 @@ main::-webkit-scrollbar-thumb {
   position: relative;
   height: 50vh; /* Adjust the height as needed */
   overflow-y: scroll;
-  background-image: url("https://cdn.glitch.global/8faffde8-beb6-4cce-9500-307d9d253fde/medea.jpeg?v=1685715219585");
+  background-image: url("https://cdn.glitch.global/8faffde8-beb6-4cce-9500-307d9d253fde/output-onlinepngtools.png?v=1685985770863");
   background-size: cover;
   background-attachment: fixed;
+  animation: fadeIn 5s;
 }
 
 
@@ -423,4 +435,7 @@ main::-webkit-scrollbar-thumb {
   opacity: 1;
   
   
+}
+.error{
+  padding: 8px;
 }

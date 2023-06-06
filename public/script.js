@@ -1,8 +1,13 @@
+function isSendButtonEnabled(){
+  return !(document.getElementById("send").disabled);
+}
+
 document.getElementById("inp_text").focus();
 document
   .getElementsByTagName("body")[0]
   .addEventListener("keypress", function (e) {
-    if (e.key === "Enter") {
+ 
+    if (e.key === "Enter" && isSendButtonEnabled()) {
       send();
     }
   });
@@ -52,6 +57,7 @@ async function getReply(text) {
 
 function send() {
   console.log("Send hit");
+
   let text = document.getElementById("inp_text").value;
   if (text === "") {
     displayError("Please enter a message.");
@@ -76,6 +82,8 @@ function send() {
         document.getElementById("send").disabled = false;
         console.log("response.api", response.generated_text);
         displayMessage(response.generated_text, "response");
+        let errorMessage = document.getElementById("error");
+        errorMessage.innerText = "";
       })
       .catch((error) => {
         load.classList.add("hidden");
@@ -113,8 +121,6 @@ function displayMessage(displayText, messageType){
 }
 
 function displayError(errorMessage) {
-  var error = document.createElement("div");
-  error.className = "error";
+  var error = document.getElementById("error");
   error.innerText = errorMessage;
-  document.getElementsByClassName("wrapper")[0].appendChild(error);
 }
