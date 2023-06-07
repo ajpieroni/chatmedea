@@ -420,6 +420,7 @@ main::-webkit-scrollbar-thumb {
   width: fit-content;
   border-radius: 10px 10px 10px 10px;
   opacity: 1;
+  font-size: 16px;
   
 }
 
@@ -433,6 +434,7 @@ main::-webkit-scrollbar-thumb {
   width: fit-content;
   border-radius: 10px 10px 10px 10px;
   opacity: 1;
+  font-size: 16px
   
   
 }
