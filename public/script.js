@@ -84,6 +84,7 @@ function send() {
         displayMessage(response.generated_text, "response");
         let errorMessage = document.getElementById("error");
         errorMessage.innerText = "";
+        errorMessage.style.backgroundColor = "null";
       })
       .catch((error) => {
         load.classList.add("hidden");
@@ -123,4 +124,6 @@ function displayMessage(displayText, messageType){
 function displayError(errorMessage) {
   var error = document.getElementById("error");
   error.innerText = errorMessage;
+  error.style.backgroundColor = "red";
+  
 }

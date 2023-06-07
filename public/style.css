@@ -169,7 +169,7 @@ form {
 
 input {
   font-family: inherit;
-  font-size: 100%;
+  font-size: 14px;
   background: #ffffff;
 
   box-sizing: border-box;
@@ -373,7 +373,7 @@ main::-webkit-scrollbar-thumb {
   flex-direction: column;
   padding: 10px;
 }
-.error{
+#error{
   color: white;
 }
 .overtime{
